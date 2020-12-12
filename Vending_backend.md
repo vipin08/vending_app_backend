@@ -1,6 +1,7 @@
 # Vending Machine 
 
-On vending machine consist two main component 
+On vending machine consist of two main component 
+
 
 1. Backend
 2. Frontend
@@ -65,7 +66,8 @@ Folder Structure of Backend System
 
 ## API list
 
-All the api based on versioning, so version is specifiy the current api version. Blueprints use for increasing the modularity of API's.
+All the API based on versioning, so the version is specified the current API version. Blueprints use for increasing the modularity of API.
+
 
 
 # Product Listing:
@@ -105,7 +107,7 @@ params:
 user_name: string
 ```
 
-Add balance handle from by frontend, becouse we are not restricted user to login. So when user comes on vending frontend new uniq `user_name` generated into frontend.
+Add balance handle from by frontend, because we are not restricted user to login. So when a user comes on vending frontend new unique `user_name` generated into the frontend.
 
 ### Admin Panel:
 
@@ -115,7 +117,8 @@ http://localhost:5000
 
 ```
 
-Admin can login into backend login panel and mantain the product inventory, order details.
+Admin can log in into backend login panel and maintain the product inventory, order details.
+
 
 #### Admin Panel Actons
 
