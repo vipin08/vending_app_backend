@@ -138,6 +138,11 @@ Admin can log in into backend login panel and maintain the product inventory, or
 
 ## How to use it
 
+```
+Python => 3
+```
+
+
 ```bash
 $ # Get the code
 $ cd admin
