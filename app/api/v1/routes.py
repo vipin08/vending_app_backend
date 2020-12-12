@@ -58,7 +58,7 @@ def products_refund(version, id):
         order = Order.query.filter_by(user_id=user.id, product_id=product.id, is_refunded=False).first()
         if not order:
             return {"status": "false", "message": "invalid order"}
-            
+
         if not order.is_refunded:
             order.is_refunded = True
             # db.session.delete(order)
@@ -70,5 +70,22 @@ def products_refund(version, id):
         else:
             return {"status": "false", "message": "invalid order"}
     return {"status": "false", "message": "invalid request"}
+
+@blueprint.route('/api/<version>/users/<int:id>/add_balance', methods=['PUT'])
+def add_balance(version, id):
+    """
+        Add balance Product API
+    """
+    data = request.get_json(force=True)
+    user = User.query.get_or_404(id)
+
+    if not user.role != 100:
+        return {"status": "false", "message": "invalid user"}
+
+    if user is not None and data is not None:
+            return {"status": "true", "id": product.id, "price": product.price, "count": product.count}
+
+    return {"status": "false", "message": "invalid request"}
+
 
 
