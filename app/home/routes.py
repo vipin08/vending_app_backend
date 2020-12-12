@@ -15,19 +15,19 @@ def index():
     print(data)
     return render_template('index.html', data=data)
 
-@blueprint.route('/<template>')
-@login_required
-def route_template(template):
+# @blueprint.route('/<template>')
+# @login_required
+# def route_template(template):
 
-    try:
+#     try:
 
-        if not template.endswith( '.html' ):
-            template += '.html'
+#         if not template.endswith( '.html' ):
+#             template += '.html'
 
-        return render_template( template )
+#         return render_template( template )
 
-    except TemplateNotFound:
-        return render_template('page-404.html'), 404
+#     except TemplateNotFound:
+#         return render_template('page-404.html'), 404
     
-    except:
-        return render_template('page-500.html'), 500
+#     except:
+#         return render_template('page-500.html'), 500
