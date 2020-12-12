@@ -1,0 +1,13 @@
+flask
+flask_login
+flask_migrate
+flask_wtf
+flask_sqlalchemy==2.*
+email_validator
+python-decouple
+gunicorn
+psycopg2
+flask-bootstrap
+flask_restful
+flask_cors
+Flask-Principal
