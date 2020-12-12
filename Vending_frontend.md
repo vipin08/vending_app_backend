@@ -66,9 +66,3 @@ https//:localhost:8080
 2. Also I've added number of products so the product could be out of stock when count is `0` from project list api.
 3. All purchased product shown on right side after cick on buy button.
 4. Refund only eligible if `is_refundable` is `true` in product listing API.
-
-
-
-
-
-
